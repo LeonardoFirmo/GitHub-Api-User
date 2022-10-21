@@ -27,6 +27,7 @@ async function user(usuario) {
         return montaLayoutUser(user)
     } else if (response.status === 200 && user.public_repos === 0) {
         dados.style.display = 'flex'
+        titulo.innerHTML = `Repositório vazio!`
         return montaLayoutUser(user)
     } else {
         dados.style.display = 'none'
