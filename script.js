@@ -19,7 +19,7 @@ async function user(usuario) {
     const titulo = document.querySelector('#titulo-repositorio')
     const dados = document.querySelector('.dados')
 
-    console.log();
+
     if (response.status === 200 && user.public_repos > 0) {
         dados.style.display = 'flex'
         titulo.innerHTML = `Repositórios!`
@@ -35,7 +35,6 @@ async function user(usuario) {
     } else {
         dados.style.display = 'none'
         titulo.innerHTML = `usuário ${usuario} não foi encontrado!`
-        console.log('usuario invalido');
     }
 
 
