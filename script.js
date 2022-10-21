@@ -25,10 +25,13 @@ async function user(usuario) {
         titulo.innerHTML = `Repositórios!`
 
         return montaLayoutUser(user)
+
     } else if (response.status === 200 && user.public_repos === 0) {
         dados.style.display = 'flex'
-        titulo.innerHTML = `Repositório vazio!`
+        titulo.innerHTML = `Repositório do usuário está vazio!`
+
         return montaLayoutUser(user)
+
     } else {
         dados.style.display = 'none'
         titulo.innerHTML = `usuário ${usuario} não foi encontrado!`
@@ -64,10 +67,6 @@ async function renderizaRepositorios(repositorios) {
     const listaRepositorios = document.querySelector('.lista-repositorios')
     const sectionUserDados = document.querySelector('.user-dados')
     const main = document.querySelector('main')
-    const titulo = document.querySelector('#titulo-repositorio')
-
-
-    // if(repositorios.length > 0){
 
     sectionUserDados.style.display = 'flex'
     main.style.height = '100%'
@@ -76,16 +75,6 @@ async function renderizaRepositorios(repositorios) {
         return listaRepositorios.innerHTML +=
             `<li><a href="${repositorio.html_url}">${repositorio.name}</a></li> <br>`
     })
-
-
-    // }else{
-    //     titulo.innerHTML=`usuário não tem repositório!` 
-    //     listaRepositorios.innerHTML=''
-    //     console.log('não tem repositorio');
-
-    // }
-
-
 
 
 }
