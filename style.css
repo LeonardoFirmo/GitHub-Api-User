@@ -70,6 +70,7 @@ main .busca form{
 .inputSearchUser{
     height:50px;
     width: 100%;
+    min-width: 230px;
     margin-bottom: 2vh;
     padding: 0 1vw;
     border-radius: 5px;
