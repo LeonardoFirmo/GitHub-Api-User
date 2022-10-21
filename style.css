@@ -45,7 +45,8 @@ main .busca{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50vh;
+    height: 60vh;
+    width: 80%;
     border-radius: 15px;
 
 }
@@ -79,6 +80,7 @@ main .busca form{
 
 .user-dados{
     display: none;
+    width: 80%;
     flex-direction: column;
     margin: 5vh 0;
     background-color: white;
