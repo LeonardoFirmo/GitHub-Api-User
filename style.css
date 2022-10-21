@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.container{
+    width: 80vw;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+li{
+    list-style: none;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+    
+    
+}
+
+#logoGit{
+   max-width: 100px;
+   margin: 3vh 0;
+   filter: invert(100%)
+}
+
+main .busca{
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    border-radius: 15px;
+
+}
+
+main .busca form{
+    height: 50%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bt{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.inputSearchUser{
+    height:50px;
+    width: 100%;
+    margin-bottom: 2vh;
+    padding: 0 1vw;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+
+
+.user-dados{
+    display: none;
+    flex-direction: column;
+    margin: 5vh 0;
+    background-color: white;
+    padding: 10vh 0;
+    border-radius: 10px;
+}
+
+.dados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#imgUser{
+    height: 20vh;
+    min-height: 5vh;
+    border-radius: 50%;
+    margin-right: 2vw;
+}
+
+.repositorios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3vw;
+    
+    
+}
+
+.repositorios .lista-repositorios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.repositorios h3{
+    margin: 5vh 0; 
+}
+
+.lista-repositorios{
+    display: flex;
+    
+}
+.lista-repositorios li{
+    margin-right: 3vw;
+    margin-top: 5vh;
+}
+
+.lista-repositorios a:hover{
+    background-color: rgb(208, 204, 204);
+    height: 100%;
+}
+
+
+@media (max-width:600px) {
+    .formSearch h2{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:400px) {
+    .formSearch h2{
+        font-size:0.7rem;
+    }
+}

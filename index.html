@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>GitHub API</title>
+</head>
+
+<body>
+
+    <main>
+        <img id="logoGit" src="./img/git.png" alt="icone da logo do github">
+
+        <section class="container busca">
+
+            <form class="formSearch">
+
+                <h2>Buscar Usuário</h2>
+                <input class="inputSearchUser" name="inputSearchUser" type="text" placeholder="Insira o nome do user">
+                <button class="bt">Buscar</button>
+            </form>
+
+
+        </section>
+
+        <section class="container user-dados">
+
+            <div class="dados">
+                <img id="imgUser" src="" alt="">
+
+                <div class="info">
+                    <h3 id="nomeUser"></h3>
+                    <p id="bio"></p>
+                </div>
+
+            </div>
+
+            <div class="repositorios">
+                <h3 id="titulo-repositorio">Repositórios</h3>
+                <ul class="lista-repositorios">
+
+
+                </ul>
+
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
