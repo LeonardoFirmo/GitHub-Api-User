@@ -150,4 +150,8 @@ main .busca form{
     .formSearch h2{
         font-size:0.7rem;
     }
+    .repositorios ul li{
+        font-size:0.8rem;
+
+    }
 }
